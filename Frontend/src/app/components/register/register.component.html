@@ -1,0 +1,69 @@
+<div class="container">
+	<h3 id="div-text">
+		Register:
+	</h3>
+	<div class="jumbotron" id="div-main">
+		<form [formGroup]="rForm" (ngSubmit)="onSubmit(); rForm.reset()">
+
+			<div class="form-group">
+				<label for="firstname">First Name</label>
+				<input type="text" id="firstname" name="firstname" formControlName="firstname" placeholder="Enter First Name" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="lastname">Last Name</label>
+				<input type="text" id="lastname" name="lastname" formControlName="lastname" placeholder="Enter Last Name" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="age">Age</label>
+				<input type="number" id="age" name="age" formControlName="age" placeholder="Enter Age" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="email">Email</label>
+				<input type="email" id="email" name="email" formControlName="email" placeholder="Enter Email" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="contactno">Contact Number</label>
+				<input type="number" id="contactno" name="contactno" formControlName="contactno" placeholder="Enter Contact Number" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="gender">Gender</label><br>
+				<div class="form-check-inline pr-4">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="gender" formControlName="gender" id="male" value="male">Male
+					</label>
+				</div>
+				<div class="form-check-inline">
+					<label class="form-check-label">
+						<input type="radio" class="form-check-input" name="gender" formControlName="gender" id="female" value="female">Female
+					</label>
+				</div>
+			</div>
+
+			<div class="form-group">
+				<label for="username">Username</label>
+				<input type="text" id="username" name="username" formControlName="username" placeholder="Enter Username" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="password">Password</label>
+				<input type="password" id="password" name="password" formControlName="password" placeholder="Enter Password" class="form-control">
+			</div>
+
+			<div class="form-group">
+				<label for="cpassword">Confirm Password</label>
+				<input type="password" id="cpassword" name="cpassword" formControlName="cpassword" placeholder="Enter Password again" class="form-control">
+			</div><br>			
+
+			<div class="form-group">
+				<button type="submit" [disabled]="!rForm.valid" name="submit" class="btn btn-block">Submit</button><br>
+				<button type="reset" name="reset" class="btn btn-block">Reset</button>
+			</div>
+
+		</form>
+	</div>
+</div>

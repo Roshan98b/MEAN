@@ -1,0 +1,35 @@
+<div>
+  <nav class="navbar navbar-dark bg-dark p-3 fixed-top">
+    <button class="navbar-toggler" data-toggle="collapse" data-target="#side-nav">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <a routerLink="home" class="navbar-brand mr-auto pl-3" routerLinkActive="active">
+      <b>Expense Tracker</b>
+    </a>
+    <ul class="navbar-nav">
+      <li class="nav-item">
+        <a class="nav-link" (click)="logout()"><b>Logout</b></a>
+      </li>
+    </ul>
+  </nav>
+</div>
+
+<div id="side-nav" class="collapse">
+  <nav class="navbar navbar-dark bg-dark leftFullFloat">
+    <ul class="navbar-nav mb-auto">
+      <li class="nav-item">
+        <a class="nav-link" routerLink="approvegh"><b>Approove Group Requests</b></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" routerLink="deletegh"><b>Delete Member</b></a>
+      </li>      
+      <li class="nav-item">
+        <a class="nav-link" routerLink="deletemember"><b>Delete Group Head</b></a>
+      </li>
+    </ul>
+  </nav>
+</div>
+<br><br><br><br><br>
+
+<router-outlet></router-outlet>
+

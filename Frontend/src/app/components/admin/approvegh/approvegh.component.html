@@ -1,0 +1,18 @@
+<div class="container">
+	<div class="jumbotron">
+		<table class="table table-hover table-bordered">
+			<tr>
+				<th>Username</th>
+				<th>Group Name</th>
+				<th></th>
+				<th></th>
+			</tr>
+			<tr *ngFor="let i of groupService.tempAllGroup">
+				<td>{{i.username}}</td>
+				<td>{{i.groupName}}</td>
+				<td><button class="btn btn-sm btn-link" (click)="onAccpet(i)">Accept</button></td>
+				<td><button class="btn btn-sm btn-link" (click)="onReject(i)">Reject</button></td>					
+			</tr>
+		</table>
+	</div>			
+</div>

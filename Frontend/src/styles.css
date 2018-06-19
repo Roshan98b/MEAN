@@ -1,0 +1,21 @@
+#div-main {
+	margin-left: 10%;
+	margin-right: 10% 
+}
+#div-text {
+	margin-bottom: 2%;
+	margin-left: 10%;
+	margin-top: 5%
+}
+.leftFullFloat {
+	bottom: 0;
+	position: fixed;
+	top: 70px;
+	width: 300px;
+}
+.rightFloat {
+	position: fixed; 
+	right: 0; 
+	top: 70px;
+	width: 300px;
+}
